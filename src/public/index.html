@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Hypergram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main-area">
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <div class="control-row">
+            <input id="file-input" type="file"/>
+            <label for="file-input" id="upload-button">Upload File</label>
+        </div>
+        <div class="control-row range">
+            <label for="brightness" id="brightnessLabel">Brightness: 0</label>
+            <input id="brightness" type="range" min="-255" max="255" step="1"/>
+        </div>
+        <div class="control-row range">
+            <label for="contrast" id="contrastLabel">Contrast: 0</label>
+            <input id="contrast" type="range" min="-128" max="128" step="1"/>
+        </div>
+        <div class="control-row range">
+            <label for="transparent" id="opacityLabel">Opacity: 1</label>
+            <input id="transparent" type="range" min="0" max="1" value="1" step="0.1"/>
+        </div>
+        <div class="control-row button-row">
+            <button id="reset-button">Reset</button>
+            <button id="save-button">Save</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
